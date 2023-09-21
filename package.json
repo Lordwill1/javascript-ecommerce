@@ -1,47 +1,25 @@
 {
-  "name": "jsamazona",
+  "name": "Ecommerce-app-2023",
   "version": "1.0.0",
-  "description": "JS AMAZONA",
-  "main": "index.js",
+  "description": "ecommerce rest api",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "start": "nodemon --watch backend --exec babel-node backend/server.js",
-    "build": "rm -rf dist && babel backend -d dist && cd frontend && npm install && npm run build",
-    "serve": "node dist/server.js",
-    "heroku-prebuild": "cd frontend && npm install --dev"
+    "start": "node server.js",
+    "server": "nodemon server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/basir/node-javascript-ecommerce.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/basir/node-javascript-ecommerce/issues"
-  },
-  "homepage": "https://github.com/basir/node-javascript-ecommerce#readme",
+  "keywords": [],
+  "author": "Techinfoyt",
+  "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cors": "^2.8.5",
-    "dotenv": "^8.2.0",
-    "express": "^4.17.1",
-    "express-async-handler": "^1.1.4",
-    "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.9.21",
-    "multer": "^1.4.2"
-  },
-  "devDependencies": {
-    "@babel/cli": "^7.10.3",
-    "@babel/core": "^7.10.3",
-    "@babel/node": "^7.10.3",
-    "@babel/preset-env": "^7.10.3",
-    "eslint": "^7.3.1",
-    "eslint-config-airbnb-base": "^14.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-import": "^2.22.0",
-    "nodemon": "^2.0.4"
-  },
-  "engines": {
-    "node": "12.4.0",
-    "npm": "6.9.0"
+    "bcrypt": "^5.1.0",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^6.8.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "react-icons": "^4.7.1"
   }
 }
